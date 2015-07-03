@@ -69,34 +69,3 @@ function locationError(err) {
 // Make an asynchronous request to get coords from watch/phone,
 navigator.geolocation.getCurrentPosition(locationSuccess, locationError, locationOptions);
 
-
-// Make the request to my API
-/*ajax(
-  {
-    url: URL,
-    type: 'json'
-  },
-function(data) {
-  // Success!
-  console.log('Successfully fetched country data!');
-
-  // Extract data
-  var town = data.town;
-  var countryname = data.countryname;
-  var population = data.population;
-
-  // Always upper-case first letter of description
-//  var description = data.weather[0].description;
-//  description = description.charAt(0).toUpperCase() + description.substring(1);
-  
-  // Show to user
-  card.subtitle('');
-  card.body('Town: ' + town + '\nCountry: ' + countryname + '\nPopulation: ' + population);
-},
-  function(error) {
-    // Failure!
-    console.log('Failed calling Bluemix frontend API: ' + error);
-  }
-);
-
-*/
